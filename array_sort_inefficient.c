@@ -2,7 +2,7 @@
 
 void sort_string(int s[], int len){
 	for( int i = 0; i < len; i += 1 ){
-		for( int j = 0; j < len - 1; j++ ){
+		for( int j = 0; j < len - 1 - i; j++ ){
 		if( s[j] > s[j + 1]){
 		    int t = s[j];
 		    s[j] = s[j + 1];
